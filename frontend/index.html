@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinAgent AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 FinAgent AI</h1>
+    <p class="subtitle">Autonomous Financial Intelligence Agent</p>
+
+    <!-- Upload Section -->
+    <div class="card">
+    <h3>Upload Financial Data</h3>
+    <input type="file" id="fileInput" multiple>
+    
+    <div id="fileListDisplay" style="margin: 10px 0; text-align: left;"></div>
+
+    <button onclick="uploadFile()">Upload</button>
+    
+    <!-- <button type="button" onclick="clearSession()" style="background: #6c757d; color: white;">
+    Clear Everything
+    </button> -->
+
+    <p id="uploadStatus"></p>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="card">
+        <h3>Ask Questions</h3>
+        <input type="text" id="questionInput" placeholder="Can I afford a trip?">
+        <button onclick="askQuestion()">Ask</button>
+    </div>
+
+    <!-- Response -->
+    <div class="card">
+        <h3>Agent Response</h3>
+        <div id="responseBox">Your answer will appear here...</div>
+        <div id="agentSteps"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
