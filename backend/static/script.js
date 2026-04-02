@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000"; 
+const BASE_URL = window.location.origin;
 
 // 1. Array to hold the "Basket" of files before uploading
 let filesToUpload = [];
